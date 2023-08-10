@@ -1,10 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Untitled</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Exchange Rate</title>
 </head>
+
 <body>
-  <div><img src="./assets/images/mailchimp-Cy5dya5MAlI-unsplash.jpg"alt="monke"></div>
-  
+  <h1>Currency Exchange Calculator</h1>
+  <form id="exchange-form">
+    <label for="amount"> Amount in USD: </label>
+    <input type="number" id="amount" required>
+
+    <label for="currency">Select currency:</label>
+    <select id="currency" required>
+      <option value="EUR">Euro (EUR)</option>
+      <option value="KRW">Korean Won (KRW)</option>
+      <option value="GBP">British Pound (GBP)</option>
+      <option value="CAD">Canadian Dollar (CAD)</option>
+      <option value="EGP">Egyptian Pound (EGP)</option>
+    </select>
+
+    <button type="submit">Convert</button>
+  </form>
+
+  <div id="result"></div>
+
+
+  </form>
 </body>
+
 </html>

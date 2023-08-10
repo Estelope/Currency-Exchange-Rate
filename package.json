@@ -1,7 +1,7 @@
 {
-  "name": "template-repo",
+  "name": "Currency Exchange Rate",
   "version": "1.0.0",
-  "description": "will serve as a template for future projects uploading gitignore is always first step",
+  "description": "this application will take an input amount (in USD) and return the equivalent in another currency.",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=development",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Estelope/template-repo.git"
+    "url": "git+https://github.com/Estelope/Currency-Exchange-Rate"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Estelope/template-repo/issues"
+    "url": "https://github.com/Estelope/Currency-Exchange-Rate/issues"
   },
-  "homepage": "https://github.com/Estelope/template-repo#readme",
+  "homepage": "https://github.com/Estelope/Currency-Exchange-Rate",
   "devDependencies": {
     "@babel/core": "^7.18.6",
     "@babel/plugin-transform-modules-commonjs": "^7.18.6",
