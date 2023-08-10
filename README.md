@@ -51,7 +51,7 @@ To determine the most recent exchange rate, this application will make an API ca
 * email the host if there are re-occuring issues or any questions
 
 ## licensing info 
-*Copyright (c) 7/13/2023 Estevan Lopez
+*Copyright (c) 8/10/2023 Estevan Lopez
 *MIT license below
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
