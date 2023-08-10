@@ -26,10 +26,9 @@ function printElements(response, currency) {
 }
 
 function printError(error, currency) {
-  let errorMessage = error.result;
   document.querySelector('#result').innerText = `There was an error accessing the exchange rate for ${currency}: 
-  ${errorMessage}.`;
-}
+  ${error}.`;
+}             //side note: its hard to get this api to fail due to the key
 
 function handleFormSubmission(event) {
   event.preventDefault();
