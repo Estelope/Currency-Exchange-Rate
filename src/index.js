@@ -16,14 +16,14 @@ async function getConversionRate(currency) {
 
 //ui
 function printElements(response, currency) {
-  document.querySelector('#result').innerText = `The exchange rate for ${currency}  is ${response.conversion_rate}%.
+  document.querySelector('#result').innerText = `The exchange rate for ${currency}  is ${response.conversion_rate}.
   The converted currency is  `;
 }
 
 function printError(error, currency) {
-  console.log(error);
+  let errorMessage = error.result;
   document.querySelector('#result').innerText = `There was an error accessing the exchange rate for ${currency}: 
-  ${error}.`;
+  ${errorMessage}.`;
 }
 
 function handleFormSubmission(event) {
