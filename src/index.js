@@ -22,7 +22,7 @@ function printElements(response, currency) {
   const amountInput = document.querySelector('#amount').value;
   const convertedAmount = calculateConvertedAmount(response.conversion_rate, amountInput);
   document.querySelector('#result').innerText = `The exchange rate for ${currency} from USD is ${response.conversion_rate}.
-  The converted currency is  ${convertedAmount} ${currency}`;
+  The converted currency is  ${convertedAmount.toFixed([2])} ${currency}`;
 }
 
 function printError(error, currency) {
