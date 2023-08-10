@@ -11,7 +11,7 @@ export default class CurrencyExchangeRate {
       }
       return jsonifiedResponse;
     } catch (error) {
-      return error;
+      return error;  
     }
   }
 }
