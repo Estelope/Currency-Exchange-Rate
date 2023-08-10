@@ -1,10 +1,9 @@
-# template repo
- will serve as a template for future projects
-uploading gitignore is always first step
+# Currency Exchange Rate 
+ 
 
  #### By Estevan Lopez
 
-#### A ready-to-use project starter pack with pre-configured settings, testing, documentation, and best practices.
+####  this application will take an input amount (in USD) and return the equivalent in another currency.
 
 ## Technologies Used
 * HTML/CSS
@@ -18,19 +17,19 @@ uploading gitignore is always first step
 * eslint
 * Jest
 * Babel
+* Exchange rate API
+
 ## Dependencies
+
 * Babel for transpiling the code.
 * Bootstrap for styling the app.
-* Jest for testing.
 * ESLint for linting.
 * Webpack for bundling the code.
 * Webpack dev server to open a browser instance with script 
 
 
 ## Description
-DESCRIPTION
-
-
+To determine the most recent exchange rate, this application will make an API call to an exchange rate API. A user should be able to type in an amount (in U.S. dollars) and then choose which currency it should be converted to.
 
 
 ## Setup/Installation Requirements
@@ -43,7 +42,6 @@ DESCRIPTION
 * repo:
 * Run "npm install" to install all dependencies.
 * Run "npm run build" to build the project.
-* test the project "npm run test"
 * open index.html in compatible web browser with "npm run start"
 
 
@@ -77,5 +75,5 @@ SOFTWARE.
 * npm run build: Build the project.
 * npm start: Build the project and start the development server.
 * npm run lint: Lint the code.
-* npm run test: Run the tests.
+
 
