@@ -13,11 +13,16 @@ async function getConversionRate(currency) {
   }
 }
 
+function calculateConvertedAmount(conversionRate, amount) {
+  return conversionRate * amount;
+} //opted to leave this out of the constrcutor since its a utility func
 
 //ui
 function printElements(response, currency) {
-  document.querySelector('#result').innerText = `The exchange rate for ${currency}  is ${response.conversion_rate}.
-  The converted currency is  `;
+  const amountInput = document.querySelector('#amount').value;
+  const convertedAmount = calculateConvertedAmount(response.conversion_rate, amountInput);
+  document.querySelector('#result').innerText = `The exchange rate for ${currency} from USD is ${response.conversion_rate}.
+  The converted currency is  ${convertedAmount} ${currency}`;
 }
 
 function printError(error, currency) {
@@ -33,6 +38,6 @@ function handleFormSubmission(event) {
   getConversionRate(currency);
 }
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
   document.querySelector('form').addEventListener("submit", handleFormSubmission);
 });
