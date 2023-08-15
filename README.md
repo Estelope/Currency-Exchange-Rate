@@ -39,7 +39,9 @@ To determine the most recent exchange rate, this application will make an API ca
  or
  * Clone the repository to your local machine.
 * below is the link for cloning the repo and instructions 
-* repo:
+* Repo: https://github.com/Estelope/Currency-Exchange-Rate
+* Create a `.env` file at the root directory and add your Exchangerate API key as `API_KEY=your_api_key_here`_
+* A key can be generated after you make an account with https://www.exchangerate-api.com/
 * Run "npm install" to install all dependencies.
 * Run "npm run build" to build the project.
 * open index.html in compatible web browser with "npm run start"
